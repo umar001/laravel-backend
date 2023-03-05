@@ -9,7 +9,7 @@ This plugin adds some useful aliases for sail commands to the zsh shell.
 ## Installation
 1. alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail' || ./vendor/bin/sail
 2. sail up
-3. chown -R sail:sail
+3. chown -R sail:sail storage
 4. php artisan migrate
 5. php artisan passport:install
 6. ✌️ cheers
