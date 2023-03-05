@@ -7,7 +7,7 @@ This plugin adds some useful aliases for sail commands to the zsh shell.
 * It also have `s cinit` alias for installing composer Dependencies and `s ninit` for installing npm Dependencies on your project, when sail is not installed.
 
 ## Installation
-1. alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+1. alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail' || ./vendor/bin/sail
 2. sail up
 3. chown -R sail:sail
 4. php artisan migrate
