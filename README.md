@@ -7,15 +7,12 @@ This plugin adds some useful aliases for sail commands to the zsh shell.
 * It also have `s cinit` alias for installing composer Dependencies and `s ninit` for installing npm Dependencies on your project, when sail is not installed.
 
 ## Installation
-1. you must install oh my zsh + git to use this plugin
-2. after installing git and Oh My Zsh run command below
-```
- git clone --depth=1 https://github.com/ariaieboy/laravel-sail ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/laravel-sail
-```
-
-3. now edit zsh config file located in ```~/.zshrc```
-4. add ```laravel-sail``` to your zsh config plugins 
-5. start a new terminal session and use the aliases
+1. alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+2. sail up
+3. chown -R sail:sail
+4. php artisan migrate
+5. php artisan passport:install
+6. ✌️ cheers
 
 ## Usage
 
