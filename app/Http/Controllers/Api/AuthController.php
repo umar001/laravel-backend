@@ -26,6 +26,7 @@ class AuthController extends Controller
             $user = User::create($validate);
             return ApiResponse::success(["user" => ["name" => $user->name, "email" => $user->email, "created_at" => $user->created_at]]);
         } catch (\Throwable $th) {
+            dd($th);
             return ApiResponse::error($th);
         }
     }
