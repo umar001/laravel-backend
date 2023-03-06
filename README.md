@@ -12,7 +12,7 @@ This plugin adds some useful aliases for sail commands to the zsh shell.
 3. chown -R sail:sail storage
 4. php artisan migrate
 5. php artisan passport:install
-6. PLease update DB_HOST with your ip to work with docker mysql container
+6. Please update DB_HOST with your ip to work with docker mysql container
 7. ✌️ cheers
 
 ## Usage
